@@ -2,6 +2,9 @@
 import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import CTA from '../components/CTA.astro';
+
 ---
 
 <!doctype html>
@@ -38,6 +41,7 @@ import Navigation from "../components/Navigation.astro";
 				<p class="page-description">
 					Sistema de evaluación profesional adaptado a tu negocio
 				</p>
+				<p>Nos interesa la capacitación profesional de todos sus empleados,  a futuro el personal sólo estará recibiendo información experta y no especulada por oficios o experiencias anteriores sin saber que valores están transmitiendo, una capacitacion consciente . indirectamente muchos estarían aprendiendo el oficio como es, de solo procesar ear en su día a día.</p>
 			</div>
 		</section>
 
@@ -80,45 +84,18 @@ import Navigation from "../components/Navigation.astro";
 					</div>
 				</div>
 
-				<div class="content-block glass">
-					<h2>Requisitos Previos</h2>
-					<ul class="requirements-list">
-						<li>
-							✓ Todo el personal debe tener licencia al día de
-							manipulación de alimentos
-						</li>
-						<li>
-							✓ Cumplimiento de normativas locales e
-							internacionales
-						</li>
-						<li>✓ Registros organizados y actualizados</li>
-					</ul>
-				</div>
-
-				<div class="content-block glass">
-					<h2>Plan de Acción</h2>
-					<p>Cuando se detectan puntos críticos con problemas:</p>
-					<ol class="action-plan">
-						<li>Se activa plan de acción inmediato</li>
-						<li>Auditoría de seguimiento programada</li>
-						<li>
-							Si no se resuelve, se activan controles adicionales
-						</li>
-					</ol>
-				</div>
-
-				<div class="content-block glass">
-					<h2>Interfaz y Reportes</h2>
+				<div class="content-block" style="background: var(--color-accent-gradient); border-radius: 20px">
+					<h2 class="report">Interfaz y Reportes</h2>
 					<div class="grid grid-2">
-						<div>
-							<h4>📱 Interfaz Amigable</h4>
+						<div class="card glass">
+							<h4>Interfaz Amigable</h4>
 							<p>
 								Facilita la utilización e ingreso de resultados
 								con retroalimentación continua e inmediata.
 							</p>
 						</div>
-						<div>
-							<h4>📊 Análisis Detallado</h4>
+						<div class="card glass">
+							<h4>Análisis Detallado</h4>
 							<p>
 								Muestra resultados y tendencias a lo largo del
 								tiempo, facilitando la toma de decisiones.
@@ -127,88 +104,43 @@ import Navigation from "../components/Navigation.astro";
 					</div>
 				</div>
 
-				<div class="content-block glass">
+				<div class="content-block">
 					<h2>Actualización Continua</h2>
-					<p>Nos mantenemos al día con:</p>
-					<ul class="update-list">
-						<li>
-							Regulaciones locales e internacionales de la
-							industria gastronómica
-						</li>
-						<li>Retroalimentación de auditores y gerentes</li>
-						<li>
-							Calendarios de revisión para mantener checklist
-							actualizados
-						</li>
-						<li>
-							Investigación de mercado para identificar nuevas
-							tendencias
-						</li>
-						<li>
-							Comparación con mejores prácticas de la industria
-						</li>
-						<li>
-							Pruebas piloto antes de incorporar nuevos ítems de
-							evaluación
-						</li>
-					</ul>
+					<p>Nos mantenemos al día con: Regulaciones locales e internacionales de la
+						industria gastronómica, Retroalimentación de auditores y gerente, Calendarios de revisión para mantener checklist
+						actualizados, Investigación de mercado para identificar nuevas
+						tendencias, Comparación con mejores prácticas de la industria, Pruebas piloto antes de incorporar nuevos ítems de
+						evaluación</p>
+
 				</div>
 			</div>
 		</section>
 
-		<section class="cta-section">
+		<!-- Team Section -->
+		<section id="equipo" class="team" style="background: var(--color-bg-secondary)">
 			<div class="container">
-				<div class="cta-card glass">
-					<h2>¿Listo para empezar?</h2>
-					<p>
-						Descubre cómo EAR puede transformar la gestión de tu
-						establecimiento
+				<div class="section-header text-center">
+					<h2>NUESTRO EQUIPO Y CAPITAL HUMANO</h2>
+				</div>
+				<div class="text-center">
+					<p class="lead">
+						Un equipo multidisciplinario de expertos:
 					</p>
-					<div class="cta-buttons">
-						<a href="/#contacto" class="btn btn-primary btn-lg"
-							>Solicitar Demo Gratis</a
-						>
-						<a href="/features" class="btn btn-secondary btn-lg"
-							>Ver Características</a
-						>
-					</div>
+					<p>
+						Ingenieros en Sistemas, Alimentos, Electrónicos. Cocineros, Pasteleros, Panaderos, Cocteleros, Heladeros, Hoteleros. Maestros gastronómicos, Bromatólogos, Bioquímicos, Odontólogos, Kinesiólogos, Farmacéuticos, Grupo Contable, Veterinarios, Médicos, Abogados, Escribanos y más.
+					</p>
 				</div>
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-section">
-						<h3>EAR Audit</h3>
-						<p>
-							La solución completa para auditorías de
-							restaurantes, franquicias y establecimientos
-							gastronómicos.
-						</p>
-					</div>
-					<div class="footer-section">
-						<h4>Navegación</h4>
-						<ul>
-							<li><a href="/">Inicio</a></li>
-							<li><a href="/features">Características</a></li>
-							<li><a href="/about">Nosotros</a></li>
-							<li><a href="/resources">Recursos</a></li>
-							<li><a href="/privacy">Privacidad</a></li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Contacto</h4>
-						<ul>
-							<li>📱 +54 9 11 2688-3989</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
-				</div>
-			</div>
-		</footer>
+		<CTA
+		title="¿Listo para adaptar tu marca?"
+		description="Unete a ear y obtén el control que siempre deseaste, los mas altos estándares de calidad, cumplimiento y rentabilidad."
+		primaryCTA={{text: "Contacto", href: "https://wa.me/+5491126883989"}}
+		secondaryCTA={{text: "Conocer Más", href: "/about"}}
+	/>
+
+		<Footer />
 
 		<style>
 			.page-header {
@@ -224,7 +156,11 @@ import Navigation from "../components/Navigation.astro";
 				font-size: var(--font-size-xl);
 				color: var(--color-text-secondary);
 				max-width: 800px;
-				margin: 0 auto;
+				margin: 0 auto 15px auto;
+			}
+
+			.report {
+				color: var(--color-text-white);
 			}
 
 			.content-page {

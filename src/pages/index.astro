@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
+import Footer from '../components/Footer.astro';
 import Navigation from "../components/Navigation.astro";
+import CTA from "../components/CTA.astro";
 import {
 	Zap,
 	CheckCircle,
@@ -81,7 +83,7 @@ import {
 								class="btn btn-primary btn-lg"
 								id="cta-hero-primary"
 							>
-								Solicitar Demo Gratis
+								Vinculación corporativa
 							</a>
 							<a
 								href="/features"
@@ -107,7 +109,7 @@ import {
 			<div class="container">
 				<div class="section-header text-center">
 					<h2>
-						¿Por qué elegir <span class="text-gradient">EAR</span>?
+						¿Qué valor aporta <span class="text-gradient">EAR</span>?
 					</h2>
 				</div>
 
@@ -135,87 +137,11 @@ import {
 			</div>
 		</section>
 
-		<!-- Features Section -->
-		<section id="caracteristicas" class="features">
-			<div class="container">
-				<div class="section-header text-center">
-					<h2>
-						CARACTERISTICAS <span class="text-gradient"
-							>PRINCIPALES</span
-						>
-					</h2>
-					<p>PLANTILLAS DISEÑADAS PARA AUDITORÍAS EFECTIVAS Y GESTIÓN EXPERTA DE TU ESTABLECIMIENTO</p>
-				</div>
-
-				<div class="grid grid-3">
-					<div class="card feature-card">
-						<div class="feature-icon">
-							<ClipboardList />
-						</div>
-						<h3>Checklist Personalizados</h3>
-						<p>
-							Listas de verificación específicas a cada tipo de rubro, desde un local unitario a una franquicia de la magnitud de locales que amerite la causa.
-						</p>
-					</div>
-
-					<div class="card feature-card">
-						<div class="feature-icon">
-							<Camera />
-						</div>
-						<h3>Interfaz Intuitiva</h3>
-						<p>
-							Diseño de calidad y a la vez sencillo y asequible de manipular. Opciones para ajustar tamaño de fuente y contraste.
-						</p>
-					</div>
-
-					<div class="card feature-card">
-						<div class="feature-icon">
-							<CheckCircle />
-						</div>
-						<h3>Auditorías Adaptadas</h3>
-						<p>
-							Las plantillas se adaptan a las evaluaciones de las diferentes áreas. Servicio 100% exclusivo a deseo de la marca.
-						</p>
-					</div>
-
-					<div class="card feature-card">
-						<div class="feature-icon">
-							<FileText />
-						</div>
-						<h3>Reportes Automáticos</h3>
-						<p>
-							Reporta automáticamente puntos críticos. Envío de plantillas en PDF o Excel dependiendo de la evaluación.
-						</p>
-					</div>
-
-					<div class="card feature-card">
-						<div class="feature-icon">
-							<BarChart />
-						</div>
-						<h3>Historial Completo</h3>
-						<p>
-							Acceso al historial para medir resultados, identificar patrones y áreas de mejora. Seguimiento a largo plazo.
-						</p>
-					</div>
-
-					<div class="card feature-card">
-						<div class="feature-icon">
-							<Bell />
-						</div>
-						<h3>Alertas en Tiempo Real</h3>
-						<p>
-							Notificaciones instantáneas de puntos delicados. Acciones inmediatas ante situaciones urgentes.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<!-- Resources Section -->
-		<section id="recursos" class="resources" style="background: var(--color-bg-secondary);">
+		<section id="recursos" style="background: var(--color-accent-gradient); border-radius: 20px">
 			<div class="container">
 				<div class="section-header text-center">
-					<h2>RECURSOS</h2>
+					<h2 class="resources">RECURSOS</h2>
 				</div>
 				<div class="grid grid-2">
 					<div class="card glass">
@@ -309,23 +235,6 @@ import {
 			</div>
 		</section>
 
-		<!-- Team Section -->
-		<section id="equipo" class="team">
-			<div class="container">
-				<div class="section-header text-center">
-					<h2>NUESTRO EQUIPO Y CAPITAL HUMANO</h2>
-				</div>
-				<div class="text-center">
-					<p class="lead">
-						Un equipo multidisciplinario de expertos:
-					</p>
-					<p>
-						Ingenieros en Sistemas, Alimentos, Electrónicos. Cocineros, Pasteleros, Panaderos, Cocteleros, Heladeros, Hoteleros. Maestros gastronómicos, Bromatólogos, Bioquímicos, Odontólogos, Kinesiólogos, Farmacéuticos, Grupo Contable, Veterinarios, Médicos, Abogados, Escribanos y más.
-					</p>
-				</div>
-			</div>
-		</section>
-
 		<!-- Mission Section -->
 		<section id="mision" class="mission" style="background: var(--color-bg-secondary);">
 			<div class="container">
@@ -350,73 +259,15 @@ import {
 			</div>
 		</section>
 
-		<!-- CTA Section -->
-		<section id="contacto" class="cta-section">
-			<div class="container">
-				<div class="cta-card glass">
-					<h2>¿Listo para adaptar tu marca?</h2>
-					<p>
-						Unete a ear y obtén el control que siempre deseaste, los mas altos estándares de calidad, cumplimiento y rentabilidad.
-					</p>
-					<div class="cta-buttons">
-						<a
-							href="https://wa.me/+5491126883989"
-							class="btn btn-primary btn-lg"
-							id="cta-contact"
-						>
-							Solicitar Demo Gratis
-						</a>
-						<a
-							href="/about"
-							class="btn btn-secondary btn-lg"
-							id="cta-learn"
-						>
-							Conocer Más
-						</a>
-					</div>
-					<p class="cta-note">
-						Sin compromiso • Soporte en español
-					</p>
-				</div>
-			</div>
-		</section>
+		<CTA
+			title="¿Listo para adaptar tu marca?"
+			description="Unete a ear y obtén el control que siempre deseaste, los mas altos estándares de calidad, cumplimiento y rentabilidad."
+			primaryCTA={{text: "Contacto", href: "https://wa.me/+5491126883989"}}
+			secondaryCTA={{text: "Conocer Más", href: "/about"}}
+		/>
 
 		<!-- Footer -->
-		<footer id="footer" class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-section" id="footer-about">
-						<h3>EAR Audit</h3>
-						<p>
-							La solución más viable para que cualquier tipo de empresa, franquicia o marca tenga el control más adaptado y premium del mercado. Excelencia operativa.
-						</p>
-					</div>
-
-					<div class="footer-section" id="footer-links">
-						<h4>Navegación</h4>
-						<ul>
-							<li><a href="/">Inicio</a></li>
-							<li><a href="/features">Características</a></li>
-							<li><a href="/about">Nosotros</a></li>
-							<li><a href="/resources">Recursos</a></li>
-							<li><a href="/privacy">Privacidad</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-section" id="footer-contact">
-						<h4>Contacto</h4>
-						<ul>
-							<li>📱 +54 9 11 2688-3989</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="footer-bottom">
-					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
-				</div>
-			</div>
-		</footer>
-
+		<Footer />
 		<style>
 			/* Navigation Header */
 			.nav-header {
@@ -667,6 +518,9 @@ import {
 				padding: var(--spacing-3xl) 0;
 			}
 
+			.resources {
+				color: var(--color-text-white);
+			}
 			.cta-card {
 				text-align: center;
 				padding: var(--spacing-3xl);

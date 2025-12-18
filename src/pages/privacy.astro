@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
 import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
+
 ---
 
 <!doctype html>
@@ -154,39 +156,7 @@ import Navigation from "../components/Navigation.astro";
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-section">
-						<h3>EAR Audit</h3>
-						<p>
-							La solución completa para auditorías de
-							restaurantes, franquicias y establecimientos
-							gastronómicos.
-						</p>
-					</div>
-					<div class="footer-section">
-						<h4>Navegación</h4>
-						<ul>
-							<li><a href="/">Inicio</a></li>
-							<li><a href="/features">Características</a></li>
-							<li><a href="/about">Nosotros</a></li>
-							<li><a href="/resources">Recursos</a></li>
-							<li><a href="/privacy">Privacidad</a></li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Contacto</h4>
-						<ul>
-							<li>📱 +54 9 11 2688-3989</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
-				</div>
-			</div>
-		</footer>
+		<Footer />
 
 		<style>
 			.page-header {

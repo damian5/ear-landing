@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
 import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
 import {
 	Zap,
 	Package,
@@ -10,6 +11,8 @@ import {
 	TrendingUp,
 	Leaf,
 } from "lucide-astro";
+import CTA from '../components/CTA.astro';
+
 ---
 
 <!doctype html>
@@ -87,8 +90,7 @@ import {
 								Buscando recomendaciones de otros dueños,
 								empresarios e inversionistas
 							</li>
-							<li>Buscando apps sobre auditoría gastronómica</li>
-							<li>Revisando el botón EXTRAS de nuestra app</li>
+							<li>Buscando apps sobre auditoría</li>
 						</ul>
 					</div>
 
@@ -119,7 +121,7 @@ import {
 				</p>
 
 				<div class="benefits-grid">
-					<div class="benefit-card glass">
+					<div class="benefit-card card glass">
 						<div class="benefit-icon">
 							<Zap />
 						</div>
@@ -132,7 +134,7 @@ import {
 						</p>
 					</div>
 
-					<div class="benefit-card glass">
+					<div class="benefit-card card glass">
 						<div class="benefit-icon">
 							<Package />
 						</div>
@@ -145,7 +147,7 @@ import {
 						</p>
 					</div>
 
-					<div class="benefit-card glass">
+					<div class="benefit-card card glass">
 						<div class="benefit-icon">
 							<Star />
 						</div>
@@ -157,7 +159,7 @@ import {
 						</p>
 					</div>
 
-					<div class="benefit-card glass">
+					<div class="benefit-card card glass">
 						<div class="benefit-icon">
 							<CheckCircle />
 						</div>
@@ -169,7 +171,7 @@ import {
 						</p>
 					</div>
 
-					<div class="benefit-card glass">
+					<div class="benefit-card card glass">
 						<div class="benefit-icon">
 							<TrendingUp />
 						</div>
@@ -181,7 +183,7 @@ import {
 						</p>
 					</div>
 
-					<div class="benefit-card glass">
+					<div class="benefit-card card glass">
 						<div class="benefit-icon">
 							<Leaf />
 						</div>
@@ -216,59 +218,13 @@ import {
 			</div>
 		</section>
 
-		<section class="cta-section">
-			<div class="container">
-				<div class="cta-card glass">
-					<h2>¿Listo para empezar?</h2>
-					<p>
-						Descubre cómo EAR puede transformar la gestión de tu
-						establecimiento
-					</p>
-					<div class="cta-buttons">
-						<a href="/#contacto" class="btn btn-primary btn-lg"
-							>Solicitar Demo Gratis</a
-						>
-						<a href="/features" class="btn btn-secondary btn-lg"
-							>Ver Características</a
-						>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-section">
-						<h3>EAR Audit</h3>
-						<p>
-							La solución completa para auditorías de
-							restaurantes, franquicias y establecimientos
-							gastronómicos.
-						</p>
-					</div>
-					<div class="footer-section">
-						<h4>Navegación</h4>
-						<ul>
-							<li><a href="/">Inicio</a></li>
-							<li><a href="/features">Características</a></li>
-							<li><a href="/about">Nosotros</a></li>
-							<li><a href="/resources">Recursos</a></li>
-							<li><a href="/privacy">Privacidad</a></li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Contacto</h4>
-						<ul>
-							<li>📱 +54 9 11 2688-3989</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
-				</div>
-			</div>
-		</footer>
+		<CTA
+			title="¿Listo para adaptar tu marca?"
+			description="Unete a ear y obtén el control que siempre deseaste, los mas altos estándares de calidad, cumplimiento y rentabilidad."
+			primaryCTA={{text: "Contacto", href: "https://wa.me/+5491126883989"}}
+			secondaryCTA={{text: "Conocer Más", href: "/about"}}
+		/>
+		<Footer />
 
 		<style>
 			.page-header {
@@ -284,7 +240,7 @@ import {
 			}
 
 			.content-page {
-				padding: var(--spacing-3xl) 0;
+				padding: 0;
 			}
 
 			.section-title {
