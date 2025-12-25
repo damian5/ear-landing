@@ -3,8 +3,7 @@ import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
-import CTA from '../components/CTA.astro';
-
+import CTA from "../components/CTA.astro";
 ---
 
 <!doctype html>
@@ -41,7 +40,15 @@ import CTA from '../components/CTA.astro';
 				<p class="page-description">
 					Sistema de evaluación profesional adaptado a tu negocio
 				</p>
-				<p>Nos interesa la capacitación profesional de todos sus empleados,  a futuro el personal sólo estará recibiendo información experta y no especulada por oficios o experiencias anteriores sin saber que valores están transmitiendo, una capacitacion consciente . indirectamente muchos estarían aprendiendo el oficio como es, de solo procesar ear en su día a día.</p>
+				<p>
+					Nos interesa la capacitación profesional de todos sus
+					empleados, a futuro el personal sólo estará recibiendo
+					información experta y no especulada por oficios o
+					experiencias anteriores sin saber que valores están
+					transmitiendo, una capacitacion consciente . indirectamente
+					muchos estarían aprendiendo el oficio como es, de solo
+					procesar ear en su día a día.
+				</p>
 			</div>
 		</section>
 
@@ -64,8 +71,7 @@ import CTA from '../components/CTA.astro';
 						<div class="score-item">
 							<div class="score-badge warning">60-69%</div>
 							<p>
-								<strong>Requiere Seguimiento</strong> - Necesita
-								mejoras
+								<strong>Requiere Seguimiento</strong> - Necesita mejoras
 							</p>
 						</div>
 						<div class="score-item">
@@ -84,7 +90,10 @@ import CTA from '../components/CTA.astro';
 					</div>
 				</div>
 
-				<div class="content-block" style="background: var(--color-accent-gradient); border-radius: 20px">
+				<div
+					class="content-block"
+					style="background: var(--color-accent-gradient); border-radius: 20px"
+				>
 					<h2 class="report">Interfaz y Reportes</h2>
 					<div class="grid grid-2">
 						<div class="card glass">
@@ -106,18 +115,26 @@ import CTA from '../components/CTA.astro';
 
 				<div class="content-block">
 					<h2>Actualización Continua</h2>
-					<p>Nos mantenemos al día con: Regulaciones locales e internacionales de la
-						industria gastronómica, Retroalimentación de auditores y gerente, Calendarios de revisión para mantener checklist
-						actualizados, Investigación de mercado para identificar nuevas
-						tendencias, Comparación con mejores prácticas de la industria, Pruebas piloto antes de incorporar nuevos ítems de
-						evaluación</p>
-
+					<p>
+						Nos mantenemos al día con: Regulaciones locales e
+						internacionales de la industria gastronómica,
+						Retroalimentación de auditores y gerente, Calendarios de
+						revisión para mantener checklist actualizados,
+						Investigación de mercado para identificar nuevas
+						tendencias, Comparación con mejores prácticas de la
+						industria, Pruebas piloto antes de incorporar nuevos
+						ítems de evaluación
+					</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Team Section -->
-		<section id="equipo" class="team" style="background: var(--color-bg-secondary)">
+		<section
+			id="equipo"
+			class="team"
+			style="background: var(--color-bg-secondary)"
+		>
 			<div class="container">
 				<div class="section-header text-center">
 					<h2>NUESTRO EQUIPO Y CAPITAL HUMANO</h2>
@@ -127,18 +144,26 @@ import CTA from '../components/CTA.astro';
 						Un equipo multidisciplinario de expertos:
 					</p>
 					<p>
-						Ingenieros en Sistemas, Alimentos, Electrónicos. Cocineros, Pasteleros, Panaderos, Cocteleros, Heladeros, Hoteleros. Maestros gastronómicos, Bromatólogos, Bioquímicos, Odontólogos, Kinesiólogos, Farmacéuticos, Grupo Contable, Veterinarios, Médicos, Abogados, Escribanos y más.
+						Ingenieros en Sistemas, Alimentos, Electrónicos.
+						Cocineros, Pasteleros, Panaderos, Cocteleros, Heladeros,
+						Hoteleros. Maestros gastronómicos, Bromatólogos,
+						Bioquímicos, Odontólogos, Kinesiólogos, Farmacéuticos,
+						Grupo Contable, Veterinarios, Médicos, Abogados,
+						Escribanos y más.
 					</p>
 				</div>
 			</div>
 		</section>
 
 		<CTA
-		title="¿Listo para adaptar tu marca?"
-		description="Unete a ear y obtén el control que siempre deseaste, los mas altos estándares de calidad, cumplimiento y rentabilidad."
-		primaryCTA={{text: "Contacto", href: "https://wa.me/+5491126883989"}}
-		secondaryCTA={{text: "Conocer Más", href: "/about"}}
-	/>
+			title="¿Listo para adaptar tu marca?"
+			description="Únete a EAR y obtén el control que siempre deseaste, los mas altos estándares de calidad, cumplimiento y rentabilidad."
+			primaryCTA={{
+				text: "Contacto",
+				href: "mailto:sales@ear-audit.com",
+			}}
+			secondaryCTA={{ text: "Conocer Más", href: "/about" }}
+		/>
 
 		<Footer />
 

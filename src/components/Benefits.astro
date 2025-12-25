@@ -1,0 +1,78 @@
+---
+import { Zap, BarChart } from "lucide-astro";
+---
+
+<section id="beneficios" class="benefits">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>
+                ¿Qué valor aporta <span class="text-gradient">EAR</span>?
+            </h2>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="benefit-item glass">
+                <div class="benefit-icon">
+                    <Zap />
+                </div>
+                <h3>Control Total</h3>
+                <p>
+                    Lleva el control de lo que vos desees en tu empresa a tus
+                    manos.
+                </p>
+            </div>
+
+            <div class="benefit-item glass">
+                <div class="benefit-icon">
+                    <BarChart />
+                </div>
+                <h3>Mejora Continua</h3>
+                <p>TODO LO QUE SE MIDE, MEJORA.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .benefits {
+        background: var(--color-bg-secondary);
+    }
+
+    .section-header {
+        margin-bottom: var(--spacing-3xl);
+    }
+
+    .section-header h2 {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .benefit-item {
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-xl);
+        transition: all var(--transition-base);
+        text-align: center;
+    }
+
+    .benefit-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-xl);
+    }
+
+    .benefit-icon {
+        font-size: 3rem;
+        margin-bottom: var(--spacing-md);
+        display: inline-block;
+    }
+
+    /* Override or ensure lucide icon size if needed, though global.css has it */
+    .benefit-icon :global(svg) {
+        width: 3rem;
+        height: 3rem;
+        stroke-width: 1.5;
+    }
+
+    .benefit-item h3 {
+        margin-bottom: var(--spacing-sm);
+        font-size: var(--font-size-xl);
+    }
+</style>

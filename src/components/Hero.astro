@@ -1,0 +1,105 @@
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in-up">
+                <h1>Auditorías profesionales que escoltan tu marca</h1>
+                <p class="hero-description">
+                    El control en tus manos.<br />
+                    Optimiza calidad, reduce costos, conserva en estado tus edilicios,
+                    aumenta rentabilidad.
+                </p>
+                <div class="hero-cta">
+                    <a
+                        href="mailto:sales@ear-audit.com"
+                        class="btn btn-primary btn-lg"
+                        id="cta-hero-primary"
+                    >
+                        Vinculación corporativa
+                    </a>
+                    <a
+                        href="/features"
+                        class="btn btn-secondary btn-lg"
+                        id="cta-hero-secondary"
+                    >
+                        Ver Características
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in">
+                <img src="/hero.png" alt="Auditoría de restaurante en tablet" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Hero Styles */
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 80px;
+    }
+
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-3xl);
+        align-items: center;
+    }
+
+    .hero-text {
+        z-index: 1;
+    }
+
+    .hero-description {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--spacing-xl);
+        line-height: 1.8;
+    }
+
+    .hero-cta {
+        display: flex;
+        gap: var(--spacing-md);
+        flex-wrap: wrap;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .hero-image {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--radius-2xl);
+        box-shadow: var(--shadow-xl);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .hero {
+            padding-top: 100px;
+        }
+
+        .hero-content {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+        }
+
+        .hero-image {
+            order: -1;
+        }
+
+        .hero-cta {
+            flex-direction: column;
+        }
+
+        .hero-cta .btn {
+            width: 100%;
+        }
+    }
+</style>
