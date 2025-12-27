@@ -10,6 +10,7 @@ import {
 	CheckCircle,
 	TrendingUp,
 	Leaf,
+	Bolt
 } from "lucide-astro";
 import CTA from "../components/CTA.astro";
 ---
@@ -61,48 +62,41 @@ import CTA from "../components/CTA.astro";
 					<div class="faq-item glass">
 						<h3>¿Es obligatorio realizar una auditoría externa?</h3>
 						<p>
-							La obligación depende de la legislación y
-							regulaciones aplicables a tu empresa o
-							establecimiento. En algunos casos, el manual de
-							franquicia puede exigir una auditoría externa para
-							corroborar todo tipo de incertidumbres.
+							Depende de la legislación vigente y de las políticas internas de tu empresa. Algunos negocios y franquicias exigen auditorías externas para garantizar transparencia, cumplimiento normativo y seguridad en las operaciones
 						</p>
 					</div>
 
 					<div class="faq-item glass">
-						<h3>¿Cuándo debo realizar una auditoría externa?</h3>
+						<h3>¿Con qué frecuencia debo realizar una auditoría externa?</h3>
 						<p>
-							Es recomendable realizar una auditoría externa cada <strong
+							Se recomienda cada <strong
 								>3 o 4 meses</strong
-							>. Sin embargo, la frecuencia puede variar según las
-							necesidades del establecimiento. Algunos lugares con
-							mayores puntos críticos requerirán seguimiento más
-							activo y frecuente.
+							>. pero la frecuencia ideal depende del tipo de negocio y los puntos críticos que maneje. Establecimientos con mayor riesgo o volumen de operaciones pueden necesitar evaluaciones mensuales.
+
 						</p>
 					</div>
 
 					<div class="faq-item glass">
-						<h3>¿Cómo puedo encontrar un auditor externo?</h3>
+						<h3>¿Cómo encontrar un auditor externo confiable?</h3>
 						<ul>
-							<li>Consultando a colegas de la industria</li>
+							<li>Consultando a colegas de la industria y asociaciones comerciales.</li>
 							<li>
-								Buscando recomendaciones de otros dueños,
-								empresarios e inversionistas
+								Revisando recomendaciones de otros empresarios e inversionistas.
 							</li>
-							<li>Buscando apps sobre auditoría</li>
+							<li>Utilizando apps especializadas en auditorías que facilitan la búsqueda, seguimiento y coordinación de evaluaciones.</li>
 						</ul>
 					</div>
 
 					<div class="faq-item glass">
-						<h3>¿Qué preguntas hacer a un auditor externo?</h3>
+						<h3>Preguntas clave para evaluar a un auditor externo:</h3>
 						<ul>
-							<li>¿Cuál es su experiencia en la industria?</li>
-							<li>¿Qué tipo de auditoría ofrecen?</li>
-							<li>¿Cuál es su tarifa por hora?</li>
+							<li>Experiencia y trayectoria en la industria específica de tu negocio.</li>
+							<li>Tipos de auditoría que ofrecen y metodologías utilizadas.</li>
+							<li>Tarifas, condiciones y tiempos de entrega de informes.</li>
 							<li>
-								¿Qué tipo de informe de auditoría proporcionan?
+								Formato y detalle de los informes de auditoría.
 							</li>
-							<li>¿Tienen referencias de clientes anteriores?</li>
+							<li>Referencias de clientes previos y casos de éxito.</li>
 						</ul>
 					</div>
 				</div>
@@ -126,10 +120,7 @@ import CTA from "../components/CTA.astro";
 						</div>
 						<h3>Eficiencia Operativa</h3>
 						<p>
-							Identifica ineficiencias en cocina, servicio o
-							gestión de inventarios. Reduce tiempos de espera,
-							mejora productividad y señala áreas con gastos
-							innecesarios.
+							Detecta cuellos de botella en cocina, servicio o gestión de inventarios. Optimiza tiempos, reduce errores operativos y mejora la productividad general del equipo.
 						</p>
 					</div>
 
@@ -139,10 +130,7 @@ import CTA from "../components/CTA.astro";
 						</div>
 						<h3>Control de Inventarios</h3>
 						<p>
-							Previene robos y pérdidas identificando
-							discrepancias en existencias. Optimiza el uso de
-							insumos detectando excesos o productos con baja
-							rotación.
+							Evita pérdidas, robos y desperdicios. Permite identificar productos con baja rotación, optimizar la compra de insumos y mantener un flujo de inventario eficiente que minimice costos innecesarios.
 						</p>
 					</div>
 
@@ -152,9 +140,7 @@ import CTA from "../components/CTA.astro";
 						</div>
 						<h3>Calidad del Servicio</h3>
 						<p>
-							Evalúa tiempos de espera, actitud del personal y
-							calidad de la comida. Mejoras en el servicio
-							aumentan la satisfacción y lealtad del cliente.
+							Evalúa la atención al cliente, la consistencia de los productos y los tiempos de respuesta. Mejorar estos aspectos aumenta la satisfacción, la lealtad del cliente y genera recomendaciones positivas.
 						</p>
 					</div>
 
@@ -164,9 +150,7 @@ import CTA from "../components/CTA.astro";
 						</div>
 						<h3>Cumplimiento de Normas</h3>
 						<p>
-							Asegura cumplimiento con regulaciones de higiene y
-							seguridad alimentaria. Evita multas y protege la
-							reputación del establecimiento.
+							Garantiza que tu negocio cumpla con regulaciones de higiene, seguridad y normativas legales. Evita sanciones, protege la reputación de tu marca y asegura un ambiente seguro para clientes y empleados.
 						</p>
 					</div>
 
@@ -176,9 +160,7 @@ import CTA from "../components/CTA.astro";
 						</div>
 						<h3>Mayor Rentabilidad</h3>
 						<p>
-							Analiza ventas y márgenes para identificar productos
-							más rentables. Optimiza estructura de precios para
-							ser competitiva y cubrir costos adecuadamente.
+							Analiza ventas, márgenes y rentabilidad por producto. Identifica los platos más lucrativos, ajusta precios estratégicamente y toma decisiones financieras basadas en datos reales.
 						</p>
 					</div>
 
@@ -188,31 +170,32 @@ import CTA from "../components/CTA.astro";
 						</div>
 						<h3>Sostenibilidad</h3>
 						<p>
-							Identifica áreas para reducir desperdicio y mejorar
-							eficiencia energética. Analiza condiciones laborales
-							y trato justo hacia empleados.
+							Reduce desperdicios, mejora la eficiencia energética y promueve prácticas laborales justas. Implementar medidas sostenibles fortalece la imagen de tu negocio y atrae a clientes conscientes.
+						</p>
+					</div>
+					<div class="benefit-card card glass">
+						<div class="benefit-icon">
+							<Bolt />
+						</div>
+						<h3>Transparencia y Toma de Decisiones Inteligente</h3>
+						<p>
+							Los resultados de auditorías detalladas permiten tomar decisiones basadas en información confiable, minimizar riesgos y planificar estrategias de crecimiento a largo plazo.
 						</p>
 					</div>
 				</div>
-
+				</div>
 				<div
-					class="content-block glass"
+					class="content-block"
 					style="margin-top: var(--spacing-2xl);"
 				>
 					<h3>Conclusión</h3>
 					<p>
-						Una auditoría no solo mejora la eficiencia y reduce
-						costos, sino que también mejora la calidad del servicio,
-						asegura cumplimiento de normativas y, lo más importante, <strong
-							>incrementa la rentabilidad y sostenibilidad del
-							negocio</strong
-						>.
+						Una auditoría profesional no es solo un requisito: es una <strong>inversión estratégica</strong> que mejora la operación, reduce costos, aumenta la rentabilidad y asegura la sostenibilidad de tu negocio.
 					</p>
 					<p>
-						La inversión en auditorías es una inversión en el
-						progreso, transparencia y éxito a largo plazo de tu
-						establecimiento.
+						<strong>Con nuestras apps, realizar auditorías se vuelve más rápido, sencillo y confiable.</strong> Gestiona cada paso desde la planificación hasta el informe final, y transforma tus datos en decisiones inteligentes que impulsan tu crecimiento.
 					</p>
+					<p><strong>¡Empieza hoy y lleva tu negocio al siguiente nivel!</strong></p>
 				</div>
 			</div>
 		</section>
